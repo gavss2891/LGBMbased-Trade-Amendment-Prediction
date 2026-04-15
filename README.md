@@ -4,7 +4,7 @@
 
 This model predicts, at the time of booking, whether a trade's counterparty will subsequently be amended. The output is a probability score per trade. Scores are used to produce a ranked daily review list for operations, concentrating genuine amendments at the top.
 
-> **Demonstration only.** The original trade data is not available in this repository and all model outputs have been omitted to maintain confidentiality. The scripts are provided to illustrate the methodology and pipeline structure.
+> **Demonstration only.** The original trade data and pipeline is not available in this repository and all model outputs have been omitted to maintain confidentiality. The scripts are provided to illustrate only the general methodology of the model itself.
 
 ---
 
@@ -154,25 +154,6 @@ Tuning is performed with **Optuna** using the TPE sampler over 200 trials (first
 | `lambda_l1` | 1e-4 – 10.0 (log scale) |
 | `lambda_l2` | 1e-4 – 10.0 (log scale) |
 | `min_sum_hessian_in_leaf` | 1e-3 – 10.0 (log scale) |
-
-### Best Parameters
-
-```json
-{
-  "num_leaves": 414,
-  "max_depth": 15,
-  "min_gain_to_split": 3.660,
-  "min_data_in_leaf": 599,
-  "learning_rate": 0.01061,
-  "feature_fraction": 0.6624,
-  "bagging_fraction": 0.6232,
-  "bagging_freq": 18,
-  "lambda_l1": 0.3470,
-  "lambda_l2": 0.1013,
-  "min_sum_hessian_in_leaf": 0.00121
-}
-```
-
 ---
 
 ## Final Model Training
