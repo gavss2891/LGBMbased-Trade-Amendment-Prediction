@@ -12,7 +12,7 @@ The class imbalance is severe: roughly 1 amended trade for every 1,000 clean one
 
 ## Approach
 
-The model is a LightGBM binary classifier trained on historical trade data. Because raw trade attributes alone carry little signal, the core of the pipeline is feature engineering based on historical group behaviour.
+The model is a LightGBM model trained on historical trade data. Because raw trade attributes alone carry little signal, the core of the pipeline is feature engineering based on historical group behaviour.
 
 Each trade is assigned to an identity group using eight attributes: Counterparty, Fund, ExecutionVenue, TradeCategory, ClearingHouse, CounterpartyRisk, InstrumentCcy, and TradeType. A second group excludes Counterparty, capturing the structural context shared across counterparties for the same trade profile.
 
