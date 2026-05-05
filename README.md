@@ -8,7 +8,9 @@ Operations teams spend time manually reviewing trades to catch counterparty amen
 
 ## Why It Matters
 
-Counterparty amendments that go unnoticed create settlement risk. The problem is not that they are rare -- it is that they are buried in a large daily trade volume with no signal separating them from clean trades. Concentrating analyst attention on the highest-risk trades reduces the chance of a missed amendment and reduces the review burden on clean ones.
+When a counterparty amendment is not caught early, the trade gets sent to the wrong party and only gets corrected the night of or days later. By that point it has already bounced around between counterparties, generated manual work, and introduced the risk of a settlement failure. Catching it at booking time reduces financial friction, prevents wrong trades from going out, cuts manual errors, and improves first-time-right rates.
+
+The class imbalance is severe: roughly 1 amended trade for every 1,000 clean ones. Despite that, the model has empirically achieved 90% precision at 60% recall on out-of-sample data.
 
 ## Approach
 
