@@ -4,9 +4,7 @@
 
 ## What This Does
 
-Operations teams spend time manually reviewing trades to catch counterparty amendments after booking. Most of that review covers trades that will never be amended. This model scores each trade at booking time with a probability that its counterparty will subsequently change, so the daily review list is ranked and the real amendments surface at the top.
-
-## Why It Matters
+This model scores each trade at booking time with a probability that its counterparty will subsequently change, so the daily review list is ranked and the real amendments surface at the top.
 
 When a counterparty amendment is not caught early, the trade gets sent to the wrong party and only gets corrected the night of or days later. By that point it has already bounced around between counterparties, generated manual work, and introduced the risk of a settlement failure. Catching it at booking time reduces financial friction, prevents wrong trades from going out, cuts manual errors, and improves first-time-right rates.
 
